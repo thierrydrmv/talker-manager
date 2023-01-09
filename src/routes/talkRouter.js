@@ -1,5 +1,5 @@
 const express = require('express');
-const readFile = require('../utils/readFile');
+const { readFile } = require('../utils');
 
 const router = express.Router();
 router.use(express.json());
