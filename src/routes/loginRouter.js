@@ -6,6 +6,6 @@ const router = express.Router();
 router.use(express.json());
 
 router.post('/login', validateEmail, validatePassword, 
-(_req, res) => res.status(201).json({ token: generateToken() }));
+(_req, res) => res.status(200).json({ token: generateToken() }));
 
 module.exports = router;
