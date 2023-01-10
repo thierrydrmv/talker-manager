@@ -49,4 +49,10 @@ router.put('/talker/:id',
     return res.status(200).json(data[data.length - 1]);
 });
 
+router.delete('/talker/:id', auth, async (req, res) => {
+  const { id } = req.params;
+  await writeFile(req.method, req.body, id);
+  return res.status(204).end();
+});
+
 module.exports = router;
