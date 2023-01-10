@@ -8,7 +8,8 @@ const validateEmail = (req, res, next) => {
   } 
   if (!(emailRegex.test(data[email]))) {
     return res.status(400).json({ message: 'O "email" deve ter o formato "email@email.com"' });
-  } 
+  }
+  console.log(req.method);
   return next();
 };
 
