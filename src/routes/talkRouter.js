@@ -12,6 +12,13 @@ const {
 const router = express.Router();
 router.use(express.json());
 
+router.get('/talker/search', auth, async (req, res) => {
+  const { q } = req.query;
+  const data = await readFile(q, true);
+
+  return res.status(200).json(data);
+});
+
 router.get('/talker', async (_req, res) => {
   const data = await readFile();  
   return res.status(200).json(data);
