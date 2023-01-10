@@ -36,4 +36,17 @@ router.post('/talker',
     return res.status(201).json(data[data.length - 1]);
 });
 
+router.put('/talker/:id', 
+  auth, 
+  validateName, 
+  validateAge, 
+  validateTalk, 
+  validateWatchedAt, 
+  validateRate, async (req, res) => {
+    const { id } = req.params;
+    await writeFile(req.method, req.body, id);
+    const data = await readFile();
+    return res.status(200).json(data[data.length - 1]);
+});
+
 module.exports = router;
