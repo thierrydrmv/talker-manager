@@ -12,11 +12,11 @@ Application for talkers (speakers) data management, in which it is possible to r
 
 In this project, I was able to:
 
-- Develop a CRUD API
-  - Create;
-  - Read;
-  - Update;
-  - Delete;
+- Develop a CRUD API:
+  - Create
+  - Read
+  - Update
+  - Delete
 - Use endpoints to reach data.
 
 ## ⬇️ Installing dependencies
