@@ -6,7 +6,7 @@ Application for talkers (speakers) data management, in which it is possible to r
 
 ## 🚀 Built With
 
-[![Node.js][Node.js]][Node.js-url]
+[![Node.js][Node.js]][Node.js-url][![Mysql][Mysql]][Mysql-url]
 
 ## 📌 Skills developed
 
@@ -37,3 +37,5 @@ npm install
 
 [Node.js]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
 [Node.js-url]: https://nodejs.org/
+[Mysql]: https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white
+[Mysql-url]: https://dev.mysql.com/doc/
